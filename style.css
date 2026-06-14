@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E1EEFF
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.navbar {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+}
+.navbar li a {
+    text-decoration: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    color: #0D2B46;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.navbar li a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.btn {
+    width: 100px;
+    padding: 10px 20px;
+    background-color: #E1EEFF;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: #007BFF;
+    color: #E1EEFF;
+}
