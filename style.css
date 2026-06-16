@@ -70,16 +70,16 @@ header {}
     gap: 20px;
 }
 
-.container-search h1 {
+#container-search h1 {
     font-size: 70px;
     color: #1b1a1a;
 }
 
-.container-search span {
+#container-search span {
     color: #0360D9;
 }
 
-.container-search p {
+#container-search p {
     font-size: 16px;
     color: #163048;
     margin-bottom: 20px;
