@@ -3,34 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #E1EEFF
+
+body {
+    background-color: #E1EEFF;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
-header {
+
+header {}
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
+
 .navbar {
     display: flex;
     gap: 20px;
     padding: 20px;
     list-style: none;
 }
+
 .navbar li a {
     text-decoration: none;
-    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18px;
     color: #0D2B46;
     cursor: pointer;
     transition: color 0.3s ease;
 }
+
 .navbar li a:hover {
     color: #007BFF;
     text-decoration: underline;
     text-underline-offset: 5px;
 }
+
+#btn-header {
+    display: flex;
+    gap: 10px;
+}
+
 .btn {
     width: 100px;
     padding: 10px 20px;
@@ -41,7 +56,65 @@ header {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .btn:hover {
     background-color: #007BFF;
     color: #E1EEFF;
+}
+
+
+
+#container-search {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-search h1 {
+    font-size: 70px;
+    color: #1b1a1a;
+}
+
+.container-search span {
+    color: #0360D9;
+}
+
+.container-search p {
+    font-size: 16px;
+    color: #163048;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: rgb(243, 237, 237);
+    font-size: 16px;
+    border-radius: 30px
+}
+
+select {
+    border: none;
+    outline: none;
+    background: transparent;
+    appearance: none;
+}
+
+.search-field {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#btn-search {
+    background-color: #0360D9;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
 }

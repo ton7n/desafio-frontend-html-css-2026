@@ -6,27 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="./assets/logo.png" alt="Logo">
-        <nav>
-            <ul class="navbar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#application">Application</a></li>
-                <li><a href="#history">History</a></li>
-            </ul>
-        </nav>
-        <div id="btn-header">
-            <button class="btn">Log in</button>
-            <button class="btn">Sign Up</button>
+        <div class="container">
+            <img src="./assets/logo.png" alt="Logo">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#application">Application</a></li>
+                    <li><a href="#history">History</a></li>
+                </ul>
+            </nav>
+            <div id="btn-header">
+                <button class="btn">Log in</button>
+                <button class="btn">Sign Up</button>
+            </div>
         </div>
     </header>
     <main>
-        <section id="top">
-    
+        <section>
+            <div class="container">
+                <div id="container-search">
+                    <h1>Find & Search Your<br><span>Favourite</span> Doctor</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Sem velit viverra amet faucibus.</p>
+                    <form action="#" method="post" class="search-form">
+                        <div class="search-field">
+                            <label for="name"><img src="./assets/profile-icon.png" alt="Profile icon"></label>
+                            <select id="name" name="name">
+                                <option value="">Doctor's Name</option>
+                            </select>
+                            <img src="./assets/arrow-down-black.png" alt="">
+                        </div>
+                        <div class="search-field">
+                            <label for="location"><img src="./assets/location-icon.png" alt="Location icon"></label>
+                            <select id="location" name="location">
+                                <option value="">Location</option>
+                            </select>
+                            <img src="./assets/arrow-down-black.png" alt="">
+                        </div>
+                        <button id="btn-search" type="submit"><img src="./assets/search-icon.png" alt="Search"></button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 </body>
